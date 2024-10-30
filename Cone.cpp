@@ -29,7 +29,7 @@ cone::Cone::Cone(const double radius, const double height)
 {
 	if (radius <= 0 || height <= 0)
 	{
-		throw std::invalid_argument("Ðàäèóñ è âûñîòà äîëæíû áûòü ïîëîæèòåëüíûìè ÷èñëàìè.");
+		throw std::invalid_argument("Ð Ð°Ð´Ð¸ÑƒÑ Ð¸ Ð²Ñ‹ÑÐ¾Ñ‚Ð° Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð±Ñ‹Ñ‚ÑŒ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼Ð¸ Ñ‡Ð¸ÑÐ»Ð°Ð¼Ð¸.");
 	}
 
 	this->radius = radius;
@@ -38,10 +38,10 @@ cone::Cone::Cone(const double radius, const double height)
 
 std::ostream& cone::operator<<(std::ostream& output, const Cone& object)
 {
-	output << "Ðàäèóñ îñíîâàíèÿ êîíóñà: " << object.GetRadius() << "\n";
-	output << "Âûñîòà êîíóñà: " << object.GetHeight() << "\n";
-	output << "Ïëîùàäü ïîâåðõíîñòè êîíóñà: " << object.GetSurfaceArea() << "\n";
-	output << "Îáú¸ì êîíóñà: " << object.GetVolume() << "\n";
+	output << "Ð Ð°Ð´Ð¸ÑƒÑ Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ñ ÐºÐ¾Ð½ÑƒÑÐ°: " << object.GetRadius() << "\n";
+	output << "Ð’Ñ‹ÑÐ¾Ñ‚Ð° ÐºÐ¾Ð½ÑƒÑÐ°: " << object.GetHeight() << "\n";
+	output << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸ ÐºÐ¾Ð½ÑƒÑÐ°: " << object.GetSurfaceArea() << "\n";
+	output << "ÐžÐ±ÑŠÑ‘Ð¼ ÐºÐ¾Ð½ÑƒÑÐ°: " << object.GetVolume() << "\n";
 
 	return output;
 }
