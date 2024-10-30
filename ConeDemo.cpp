@@ -14,27 +14,27 @@ int main()
 	{
 		double radius, height;
 
-		std::cout << "Ââåäèòå ğàäèóñ îñíîâàíèÿ êîíóñà: ";
+		std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ€Ğ°Ğ´Ğ¸ÑƒÑ Ğ¾ÑĞ½Ğ¾Ğ²Ğ°Ğ½Ğ¸Ñ ĞºĞ¾Ğ½ÑƒÑĞ°: ";
 		std::cin >> radius;
 
-		std::cout << "Ââåäèòå âûñîòó êîíóñà: ";
+		std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²Ñ‹ÑĞ¾Ñ‚Ñƒ ĞºĞ¾Ğ½ÑƒÑĞ°: ";
 		std::cin >> height;
 
 		Cone first(radius, height);
 
-		std::cout << "Ââåäåííûé ğàäèóñ îñíîâàíèÿ: " << first.GetRadius() << "\n";
-		std::cout << "Ââåäåííàÿ âûñîòà: " << first.GetHeight() << "\n";
-		std::cout << "Ïëîùàäü ïîâåğõíîñòè êîíóñà: " << first.GetSurfaceArea() << "\n";
-		std::cout << "Îáúåì êîíóñà: " << first.GetVolume() << "\n";
+		std::cout << "Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ½Ñ‹Ğ¹ Ñ€Ğ°Ğ´Ğ¸ÑƒÑ Ğ¾ÑĞ½Ğ¾Ğ²Ğ°Ğ½Ğ¸Ñ: " << first.GetRadius() << "\n";
+		std::cout << "Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ½Ğ°Ñ Ğ²Ñ‹ÑĞ¾Ñ‚Ğ°: " << first.GetHeight() << "\n";
+		std::cout << "ĞŸĞ»Ğ¾Ñ‰Ğ°Ğ´ÑŒ Ğ¿Ğ¾Ğ²ĞµÑ€Ñ…Ğ½Ğ¾ÑÑ‚Ğ¸ ĞºĞ¾Ğ½ÑƒÑĞ°: " << first.GetSurfaceArea() << "\n";
+		std::cout << "ĞĞ±ÑŠĞµĞ¼ ĞºĞ¾Ğ½ÑƒÑĞ°: " << first.GetVolume() << "\n";
 
-		std::cout << "\nÄåìîíñòğàöèÿ ïåğåãğóçêè îïåğàòîğà âûâîäà â ïîòîê:\n";
+		std::cout << "\nĞ”ĞµĞ¼Ğ¾Ğ½ÑÑ‚Ñ€Ğ°Ñ†Ğ¸Ñ Ğ¿ĞµÑ€ĞµĞ³Ñ€ÑƒĞ·ĞºĞ¸ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ‚Ğ¾Ñ€Ğ° Ğ²Ñ‹Ğ²Ğ¾Ğ´Ğ° Ğ² Ğ¿Ğ¾Ñ‚Ğ¾Ğº:\n";
 		std::cout << first << "\n";
 
 		return 0;
 	}
 	catch (const std::exception& error)
 	{
-		std::cout << "ÎØÈÁÊÀ: " << error.what() << "\n";
+		std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: " << error.what() << "\n";
 	}
 
 	return -1;
